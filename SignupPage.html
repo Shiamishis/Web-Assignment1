@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 100px;
+            text-align: center;
+            
+        }
+        body{
+            background-color: rgb(8, 45, 79);
+        }
+        .Information{
+            display: flex;
+            justify-content: center;
+           
+            color: aliceblue;
+            border-radius: 10px;
+            text-align: center;
+        }
+        label{
+            width: 150px;
+            display: inline-block;
+        }
+
+        #sex{
+            position: relative;
+            right: 50px;
+        }
+        
+        input[type="submit"]{
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            position: relative;
+            
+        }
+
+        input[type="submit"]:hover{
+            background-color: rgb(5, 5, 60);
+            color: white;           
+        }
+        
+        .welcome{
+            position: relative;
+            top: 34px;
+        }
+
+        .LogIn{
+            color:lightblue;
+            display: flex;
+            justify-content: center;
+        }
+
+        a:hover{
+            color: brown
+        }    
+    </style>
+</head>
+<header style="color: cornsilk;">
+    <h2 class="welcome"><center>WELCOME TO OUR WEBSITE</center></h2>
+</header>
+<body>
+    <div class="Information">
+        <form action="Website.html">
+            <label for="name">Name:</label>
+            <input type="text" name = "name"><br><br>
+            <label for="ID">ID:</label>
+            <input type="text" name="ID"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id=""><br><br>
+            <label for="address">Address:</label>
+            <input type="text" name="address"><br><br>
+            <label for="country">Country:</label>
+            <input type="text" name="country"><br><br>
+            <label for="ZIPcode">Zip Code:</label>
+            <input type="text" name="ZIPcode"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email"><br><br>
+            <label for="sex" id="sex">Sex:</label>
+            <select name="sex" id="">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label for="language">Language:</label>
+            <input type="text" name="language"><br><br>
+            <label for="info">About/Bio:</label>
+            <textarea name="info" id="" cols="30" rows=""></textarea><br><br>
+            <input type="submit" value="SignUp">
+        </form>
+    </div>
+    <h3><a href="/Website/Assignment1/SigninPage.html" class="LogIn"> Already have an acount? </a></h3>
+</body>
+</html>
