@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    } 
+    label {
+        width: 150px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    input[type="submit"]{
+        height: 30px;
+        border-radius: 10px;
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(58, 86, 138);
+        color: white;
+        border: none;
+    }
+    input[type="text"], input[type="date"], textarea{
+        border-radius: 7px;
+        border: none;
+    }
+    .GoalForm{
+        background-color: lightblue;
+        color: black;
+        width: fit-content;
+        border-radius: 20px;
+        position: relative;
+        top: 150px;
+    }
+    header{
+        height: 100px;
+    }
+    </style>
+</head>
+<header style="background-color: rgb(58, 86, 138);">
+    <h1 style="position: relative; top: 15px;"><center class="heading">Set your goals and live the life of your dreams</center></h1>
+</header>
+<body style="background-color:   rgb(8, 45, 79); color: white;">
+    <center>
+        <div class = "GoalForm">
+            <h2>
+                <form action="Website.html">
+                    <label for="name">Goal Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="description">Goal Description:</label>
+                    <textarea id="description" name="description"></textarea><br>
+                    <label for="date">Due Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="specific">Specific:</label>
+                    <input type="text" id="specific" name="specific"><br>
+                    <label for="measurable">Measurable:</label>
+                    <input type="text" id="measurable" name="measurable"><br>
+                    <label for="attainable">Attainable:</label>
+                    <input type="text" id="attainable" name="attainable"><br>
+                    <label for="relevant">Relevant:</label>
+                    <input type="text" id="relevant" name="relevant"><br>
+                    <label for="timebound">Time-bound:</label>
+                    <input type="text" id="timebound" name="timebound"><br>
+                    <input type="submit" value="Add Goal">     
+                  </form>
+            </h2>
+        </div>
+    </center>
+</body>
+</html>

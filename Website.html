@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        header{
+            background-color: rgb(8, 45, 79);
+            color: white;
+            height: 70px;
+            text-align: center;
+            text-decoration: dashed;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        table {
+            border: 0.5mm double cornsilk;
+            position: relative;
+            margin-top: 2%;
+            max-width: 90%;
+            margin-left: 2%;
+        }
+        td, th {
+            border: 0.2mm solid cornsilk;
+            padding: 3mm;
+        }
+        input[type="button"]:hover{
+            background-color: green;
+            color: white;
+        }
+
+        input[type="button"]{
+            border: none;
+            border-radius: 7px;
+        }
+
+    </style>
+
+    <header style="background-color: rgb(58, 86, 138);">
+        <h1 style="position: relative; top: 22%;">SMART Goal Setting</h1>
+    </header>
+</head>
+
+
+<body style="background-color: rgb(8, 45, 79); color: cornsilk;">
+    <table>
+        <thead>
+            <tr>
+                <th style="white-space: nowrap;">Goal name</th>
+                <th>Description</th>
+                <th>Due date</th>
+                <th>Specific</th>
+                <th>Measurable</th>
+                <th>Assignable</th>
+                <th>Realistic</th>
+                <th>Time-bound</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Studying</td>
+                <td>I need to study more.</td>
+                <td style="white-space: nowrap;">30-06-2023</td>
+                <td>I'm going to study daily so I can ace ADS.</td>
+                <td>I have weekly quizzes to evaluate.</td>
+                <td>I'm good in school and can get great grades when I focus.</td>
+                <td>I want to graduate at the top of my class and have the opportunity for a great career in my field.</td>
+                <td>I want to be at the top of my class when finish ADS in 3 weeks.</td>
+            </tr>
+            <tr>
+                <td>Reading</td>
+                <td>I want to watch less tv and read more.</td>
+                <td>10-07-2023</td>
+                <td> I want to read at least one book per month instead of watching TV.</td>
+                <td>I've joined a book club where we set weekly reading goals.</td>
+                <td>I enjoy reading and learning but have just gotten away from it lately.</td>
+                <td>By reading, I'll learn more about my industry.</td>
+                <td>I'll start next week and do this for six months, then evaluate how it's going and plan my next steps.</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <a href="CreateGoal.html"><input type="button" value="Add new goal" style="position: absolute; right: 0; margin-right: 17ch; margin-top: 3ch;"></a>
+    <br><h4 style = "margin-left: 2%;">Targets for Studying:
+        <ul><li>
+            Finsish all the implementation excercises.
+            <input type="checkbox" name="implementation" id="">
+        </li>
+        <li>
+            Finish all the analysis excercises.
+            <input type="checkbox" name="analysis" id="">
+        </li>
+        <li>
+            Study ADS for 20 hours.
+            <input type="number" name="hours" id="" max="20" min="0">
+        </li>
+        
+    </ul>
+    <br>Targets for Reading:
+    <ul><li>
+        Read 6 books.
+        <input type="checkbox" name="10pages" id="">
+        <input type="checkbox" name="10pages" id="">
+        <input type="checkbox" name="10pages" id="">
+        <input type="checkbox" name="10pages" id="">
+        <input type="checkbox" name="10pages" id="">
+        <input type="checkbox" name="10pages" id="">
+    </li>
+    <li>
+        Register to the book club.
+        <input type="checkbox" name="bookclub" id="">
+    </li>
+    <br></ul>
+    <h3>Add new target<br></h3>
+        Choose the type of target you want to add:
+        <select name="choices" id="">
+            <option value="Numeric">Numeric</option>
+            <option value="Boolean">Boolean</option>
+            <option value="Monetary">Monetary</option>
+        </select>
+        <br><br>
+        Add the target's description:
+        <textarea name="" id="" rows="1"></textarea><br><br>
+        Choose the goal you want to add the target to:
+    <select name="choices" id="">
+        <option value="Studying">Studying</option>
+        <option value="Reading">Reading</option>
+    </select>
+    <br><br>
+        <a href="Website.html"><input type="submit" value="Add Target" style="font-size: large;"></a>
+        
+    </h4>
+</body>
+<footer style="background-color: rgb(58, 86, 138); color: white; ">
+    <h2 style = "margin-left: 2%; margin: 2%;">
+        Rate your experience:
+        <div id="rating-container">
+            <select name="rating" id="">
+                <option value="rating">Rate Us</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+          </div>
+          <a href="#"><input type="button" value="Submit"></a>  
+    </h2>
+</footer>
+</html>
